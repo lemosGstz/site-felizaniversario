@@ -1,0 +1,109 @@
+/* Barra de navegação */
+.navbar {
+    background-color: #141414;
+    border-bottom: 2px solid #e50914;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e50914 !important;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos globais */
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p, h2 {
+    color: #fff;
+}
+
+/* Carousel de fotos */
+.carousel-inner {
+    height: 80vh;
+}
+
+.carousel-item img {
+    width: auto;
+    height: 70vh;
+    object-fit: contain;
+    border-radius: 50%; /* Adiciona bordas arredondadas a todas as imagens do carrossel */
+}
+
+/* Texto central */
+.text-center {
+    text-align: center;
+}
+
+/* Mensagens de boas-vindas e declarações */
+.lead {
+    font-size: 1.25rem;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+/* Controles do Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #e50914;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #ff4d4d; /* Change color on hover */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Declaração de amor */
+.declaration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-inner {
+    height: 80vh;
+    animation: slideIn 1s ease; /* Add slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
